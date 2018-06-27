@@ -1,3 +1,3 @@
 # Последние выполненные проекты
 
-* [Редизайн сайта DONSKAYA-NIVA.RU](tree/master/donskaya-niva.ru)
+* [Редизайн сайта DONSKAYA-NIVA.RU](donskaya-niva.ru)
