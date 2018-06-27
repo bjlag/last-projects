@@ -2,7 +2,7 @@
 
 [https://donskaya-niva.ru/](https://donskaya-niva.ru/)
 
-<small>Редизайн, Front-end, Back-end</small>
+<small>Проектирование, Редизайн, Front-end, Back-end</small>
 
 ## В работе использовал
  
