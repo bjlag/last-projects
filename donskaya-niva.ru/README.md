@@ -2,7 +2,7 @@
 
 ![Редизайн сайта DONSKAYA-NIVA.RU](images/preview.jpg "Редизайн сайта DONSKAYA-NIVA.RU")  
 
-[https://donskaya-niva.ru/](https://donskaya-niva.ru/)
+[https://donskaya-niva.ru](https://donskaya-niva.ru)
 
 <small>Проектирование, Редизайн, Front-end, Back-end</small>
 
