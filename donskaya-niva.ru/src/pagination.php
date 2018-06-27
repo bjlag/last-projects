@@ -3,7 +3,6 @@ function pagination_list_render( $list )
 {
     $doc = JFactory::getDocument();
 
-    // Calculate to display range of pages
     $currentPage = 1;
     $range = 1;
     $step = 5;
@@ -23,12 +22,9 @@ function pagination_list_render( $list )
 
     $html = '<ul class="pagination pagination-sm">';
 
-//    if ( $list[ 'start' ]['active'] ) {
-//        $html .= '<li class="pagination__start">' . str_replace( '?limitstart=0', '', $list[ 'start' ][ 'data' ] ) . '</li>';
-//    }
-
     if ( $list[ 'previous' ]['active'] ) {
-        $html .= '<li class="pagination__prev">' . str_replace( '?limitstart=0', '', $list[ 'previous' ][ 'data' ] ) . '</li>';
+        $html .= '<li class="pagination__prev">' . str_replace( '?limitstart=0', '', $list[ 'previous' ][ 'data' ] )
+            . '</li>';
     }
 
     $prev_href = null;
@@ -45,7 +41,9 @@ function pagination_list_render( $list )
 
     foreach ( $list[ 'pages' ] as $k => $page ) {
         if ( in_array( $k, range( $range * $step - ( $step + 1 ), $range * $step ) ) ) {
-            if ( ( $k % $step == 0 || $k == $range * $step - ( $step + 1 ) ) && $k != $currentPage && $k != $range * $step - $step ) {
+            if ( ( $k % $step == 0 || $k == $range * $step - ( $step + 1 ) )
+                && $k != $currentPage && $k != $range * $step - $step )
+            {
                 $page[ 'data' ] = preg_replace( '#(<a.*?>).*?(</a>)#', '$1...$2', $page[ 'data' ] );
             }
         }
@@ -69,10 +67,6 @@ function pagination_list_render( $list )
     if ( isset( $next_href ) ) {
         $doc->addCustomTag( '<link rel="next" href="' . JURI::base() . $next_href . '">' );
     }
-
-//    if ( $list[ 'end' ]['active'] ) {
-//        $html .= '<li class="pagination__end">' . $list[ 'end' ][ 'data' ] . '</li>';
-//    }
 
     $html .= '</ul>';
 
