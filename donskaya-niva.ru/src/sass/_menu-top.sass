@@ -1,0 +1,88 @@
+.menu-top
+    margin: 0
+    padding: 0
+    list-style: none
+
+    &__item
+        float: left
+        margin: 0 15px 0 0
+        position: relative
+
+        &:last-child
+            margin-right: 0
+
+        &:hover
+            > .menu-top__submenu-wrapper
+                display: block
+
+    &__item-link
+        position: relative
+        color: $color__menu-main
+        font-size: 18px
+        font-weight: 300
+        text-decoration: none
+        line-height: 18px
+        transition: color ease-out $transition__delay-fast
+
+        @media screen and ( max-width: 1199px )
+            font-size: 17px
+
+        &:hover
+            text-decoration: none
+            color: $color__menu-hover
+
+        &:active
+            color: lighten( $color__menu-hover, 30% )
+
+    &__item-active
+        color: $color__menu-active
+
+        &:before
+            content: ''
+            position: absolute
+            top: 25px
+            border-top: 2px solid $color__menu-active
+            width: 100%
+
+    &__submenu-wrapper
+        display: none
+        position: absolute
+        width: 170px
+        left: -15px
+        padding: 31px 0 0
+        z-index: 20
+
+    &__submenu-list
+        margin: 0
+        padding: 0
+        list-style: none
+        box-shadow: 0 2px 5px rgba( 0, 0, 0, 0.15 )
+
+    &__submenu-item
+        padding: 6px 15px
+        background-color: $color__bg
+
+        &:first-child
+            padding-top: 15px
+
+        &:last-child
+            padding-bottom: 15px
+
+    &__submenu-item-link
+        display: block
+        color: $color__menu-main
+        text-decoration: none
+        font-weight: 400
+        font-size: 14px
+        line-height: 14px
+        transition: color ease-out $transition__delay-fast
+
+        &:hover
+            color: $color__menu-hover
+            text-decoration: none
+
+        &:active
+            color: lighten( $color__menu-hover, 30% )
+
+    &__submenu-item-active
+        color: $color__menu-active

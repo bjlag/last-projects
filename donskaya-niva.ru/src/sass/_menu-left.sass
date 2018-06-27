@@ -1,0 +1,49 @@
+.menu-left
+    margin: 0
+    padding: 0
+    list-style: none
+
+    &--fixed-top
+        @media screen and ( min-width: 992px )
+            position: fixed
+            max-width: 212px
+            top: 130px
+
+        @media screen and ( min-width: 1200px )
+            position: fixed
+            max-width: 262px
+            top: 130px
+
+    &--fixed-bottom
+        position: absolute
+        bottom: 0
+        top: auto
+
+    &__item
+        margin: 0
+
+    &__link
+        display: block
+        color: $color__menu-main
+        font-size: 18px
+        font-weight: 300
+        line-height: 18px
+        padding: 5px 0 5px 15px
+        border-left: 3px solid $color__bright
+        transition: color ease-out $transition__delay-fast, border-left-color ease .15s
+        text-decoration: none
+
+        @media screen and ( max-width: 1199px )
+            font-size: 17px
+
+        &:hover
+            text-decoration: none
+            color: $color__menu-hover
+            border-left: 3px solid $color__menu-hover
+
+        &:active
+            color: lighten( $color__menu-hover, 30% )
+
+    &__link-active
+        color: $color__menu-active
+        border-left: 3px solid $color__menu-active

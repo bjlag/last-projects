@@ -1,0 +1,31 @@
+.header
+    border-bottom: 3px solid $color__bright
+    transition: transform $transition__delay-normal
+    background: $color__bg-body
+    position: absolute
+    left: 0
+    right: 0
+    height: 87px
+
+    &--fixed
+        position: fixed
+        top: -87px
+        left: 0
+        right: 0
+        transform: translateY( 100% )
+        box-shadow: 0 0 10px rgba( 0, 0, 0, 0.15 )
+        z-index: 100
+
+    &__logo
+        padding: 15px
+
+    &__menu
+        padding-top: 32px
+
+    &__phone
+        text-align: right
+        padding-top: 10px
+
+    &__hamburger
+        text-align: right
+        padding-top: 15px

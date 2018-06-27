@@ -1,0 +1,111 @@
+html,
+body
+    height: 100%
+    display: flex
+    flex-direction: column
+
+a
+    color: $color__link
+    text-decoration: none
+
+a:hover
+    text-decoration: underline
+
+a:active
+    color: lighten( $color__link, 30% )
+
+a:focus
+    outline: none
+    text-decoration: none
+    color: $color__menu-active
+
+*:focus
+    outline: none
+
+p
+    margin-bottom: 15px
+
+h1
+    color: $color__menu-main
+    font-size: 28px
+    font-weight: 400
+    line-height: 38px
+    margin: 0 0 20px
+
+h2
+    color: $color__menu-main
+    font-size: 23px
+    font-weight: 400
+    line-height: 29px
+    margin: 0 0 20px
+
+h3
+    color: $color__menu-main
+    font-size: 21px
+    font-weight: 300
+    line-height: 29px
+    margin: 0 0 20px
+
+.wrapper
+    flex: 1 0 auto
+
+.body
+    font-family: 'Roboto', sans-serif
+    font-size: 16px
+    font-weight: 400
+    color: $color__text
+    line-height: 24px
+
+    &--bg
+        background: $color__bg-body
+
+// Таблица
+.tbl
+    padding-bottom: 20px
+    margin: 20px 0
+    width: 100%
+    border-bottom: 5px solid #ffec98
+    border-collapse: separate
+
+    th
+        padding: 15px 15px
+        background: #ffec98
+        color: #9E7217
+        font-size: 16px
+        font-weight: 400
+        line-height: 19px
+        border-right: 5px solid #FFF4D9
+
+        &:last-child
+            border-right: none
+
+    td
+        padding: 20px 15px
+        vertical-align: top
+
+        &:after
+            content: ''
+            display: table-cell
+            width: 5px
+
+    p
+        margin-bottom: 10px
+
+    b
+        font-weight: 500
+
+    tr:nth-child( 2n+1 ) td
+        background: #FFFAEC
+        border-right: 5px solid #FFF4D9
+
+        &:last-child
+            border-right: none
+
+ul, ol
+    margin-bottom: 15px
+
+li
+    margin-bottom: 5px
+
+    &:last-child
+        margin-bottom: 0

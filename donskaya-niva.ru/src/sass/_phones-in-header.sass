@@ -1,0 +1,60 @@
+.phones-in-header
+    &__row
+        height: 22px
+
+    &__left-side
+        float: left
+        width: 60%
+        text-align: right
+
+        @media screen and ( max-width: 1199px )
+            display: none
+
+    &__right-side
+        width: 40%
+        float: right
+
+        @media screen and ( max-width: 1199px )
+            width: 100%
+
+    &__title
+        color: $color__grey
+        font-size: 13px
+        font-weight: 300
+        line-height: 22px
+
+    &__phone
+        color: $color__grey
+        font-size: 16px
+        font-weight: 400
+        line-height: 22px
+
+        a
+            color: inherit
+
+        a:hover
+            text-decoration: none
+
+    //.skype_pnh_container
+    //    display: none !important
+    //
+    //.skype_pnh_print_container
+    //    display: inline !important
+
+    &__callback-link
+        color: $color__menu-main
+        font-size: 15px
+        font-weight: 300
+        text-decoration: none
+        line-height: 19px
+        transition: color ease-out $transition__delay-fast
+
+        &:focus
+            color: $color__menu-main
+
+        &:hover
+            color: $color__menu-hover
+            text-decoration: none
+
+        &:active
+            color: lighten( $color__menu-hover, 30% )

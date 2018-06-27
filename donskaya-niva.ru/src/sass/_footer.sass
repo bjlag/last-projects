@@ -1,0 +1,32 @@
+.footer
+    border-top: 3px solid $color__bright
+    flex: 0 0 auto
+    margin-top: 40px
+
+    &__top
+        padding: 30px 0
+        background-color: $color__footer
+
+    &__bottom
+        padding: 20px 0
+        background-color: $color__bg-body
+
+    &__bottom-copyright
+        text-align: left
+
+        @media screen and ( max-width: 749px )
+            text-align: center
+            margin-bottom: 15px
+
+    &__bottom-developer
+        text-align: right
+
+        @media screen and ( max-width: 749px )
+            text-align: center
+
+    &__bottom-copyright,
+    &__bottom-developer
+        font-size: 13px
+        line-height: 13px
+        color: $color__grey
+        font-weight: 300

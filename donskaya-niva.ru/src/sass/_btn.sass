@@ -1,0 +1,44 @@
+.btn
+    display: inline-block
+    color: $color__menu-main
+    border-radius: 4px
+    font-size: 20px
+    line-height: 24px
+    font-weight: 400
+    padding: 15px 25px
+    white-space: normal
+    transition: color ease-out $transition__delay-fast, border ease-out $transition__delay-fast
+
+    @media only screen and ( min-width: 992px ) and ( max-width: 1199px )
+        padding: 15px
+        font-size: 18px
+
+    &:hover
+        border: 1px solid $color__menu-main
+        color: $color__menu-main
+
+    &__go
+        font-weight: 300
+        background-color: $color__btn-go
+
+        &:active
+            background-color: lighten( $color__btn-go, 15% )
+
+    &__action
+        background-color: $color__btn-action
+
+        &:focus
+            color: $color__menu-main
+            outline: none
+
+        &:active
+            background-color: lighten( $color__btn-action, 15% )
+            box-shadow: none
+
+    &--reset
+        background: transparent
+        border: 1px solid #FDE021
+
+    &--small
+        font-size: 16px
+        line-height: 16px

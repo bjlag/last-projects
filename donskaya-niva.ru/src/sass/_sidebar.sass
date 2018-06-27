@@ -1,0 +1,46 @@
+$sidebar__color-bg: #FFFAEC
+$sidebar__color-bg-header: #FFEC98
+$sidebar__color-border: #FDE021
+
+.sidebar
+    position: fixed
+    top: 0
+    right: -100%
+    z-index: 200
+    width: 100%
+    height: 100%
+    background: $sidebar__color-bg
+    overflow: hidden
+    transition: transform ease-in 0.75s
+
+    &--show
+        transform: translateX( -100% )
+
+    &__container
+
+    &__header
+        height: 87px
+        position: absolute
+        z-index: 10
+        width: 100%
+        padding: 15px 15px 0
+        text-align: right
+        background: $sidebar__color-bg-header
+        border-bottom: 3px solid $sidebar__color-border
+
+    &__body
+        position: absolute
+        z-index: 5
+        height: 100%
+        width: 100%
+        padding-top: 87px
+        overflow-y: scroll
+
+    &__inner-body
+        padding: 20px 15px
+
+    &__separator
+        margin-top: 20px
+        margin-bottom: 20px
+        border: 0
+        border-top: 2px solid $sidebar__color-border
