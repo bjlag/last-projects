@@ -10,7 +10,7 @@ _Проектирование, Редизайн, Front-end, Back-end_
  
 CMS Joomla 3, Gulp, SASS, Bootstrap 3, БЭМ, jQuery, Ajax, PHP
 
-**В `src` лежат примеры иходных файлов: SASS, JS, PHP.** 
+В `src` лежат примеры иходных файлов: SASS, JS, PHP.
 
 ## Основные причины редизайна
 
