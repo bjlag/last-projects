@@ -1,10 +1,10 @@
 # Редизайн сайта DONSKAYA-NIVA.RU
 
-![Редизайн сайта DONSKAYA-NIVA.RU](images/preview.jpg "Редизайн сайта DONSKAYA-NIVA.RU")  
-
 [https://donskaya-niva.ru](https://donskaya-niva.ru)
 
-<small>Проектирование, Редизайн, Front-end, Back-end</small>
+![Редизайн сайта DONSKAYA-NIVA.RU](images/preview.jpg "Редизайн сайта DONSKAYA-NIVA.RU")  
+
+_Проектирование, Редизайн, Front-end, Back-end_
 
 ## В работе использовал
  
