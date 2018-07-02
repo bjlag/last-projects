@@ -8,8 +8,10 @@ _Проектирование, Редизайн, Front-end, Back-end_
 
 ## В работе использовал
  
-CMS Joomla 3, Gulp, SASS, Bootstrap 3, БЭМ, jQuery, Ajax, PHP  
-_В src лежат примеры исходных файлов: SASS, JS, PHP_
+* Front-end: Gulp, HTML, CSS, SASS, Bootstrap 3, БЭМ, jQuery, Ajax
+* Back-end: Joomla 3.8, PHP, MySQL
+  
+_В src лежат примеры c исходным кодом._
 
 ## Основные проблемы
 
