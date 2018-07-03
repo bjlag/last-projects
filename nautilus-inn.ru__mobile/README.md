@@ -1,10 +1,10 @@
 # Мобильная версия сайта NAUTILUS-INN.RU
 
-![Мобильная версия сайта NAUTILUS-INN.RU](images/preview.jpg "Мобильная версия сайта NAUTILUS-INN.RU")  
+[https://nautilus-inn.ru](https://nautilus-inn.ru)
 
 _Проектирование, Front-end, Back-end_
 
-[https://nautilus-inn.ru](https://nautilus-inn.ru)
+![Мобильная версия сайта NAUTILUS-INN.RU](images/preview.jpg "Мобильная версия сайта NAUTILUS-INN.RU")  
 
 ## В работе использовал
  
