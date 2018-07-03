@@ -1,0 +1,51 @@
+.feature
+    position: relative
+    z-index: 10
+    text-align: center
+    margin-top: 45px
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3)
+        margin-top: 0
+
+    @media only screen and ( max-width: 991px )
+        &:nth-child(1)
+            margin-top: 0
+
+        &:nth-child(2),
+        &:nth-child(3)
+            margin-top: 45px
+
+    &__img
+        display: inline-block
+        margin-bottom: 37px
+
+    &__title
+        margin-bottom: 6px
+        color: #ffffff
+        font-size: 24px
+        font-weight: 400
+        letter-spacing: 1.2px
+
+        a
+            color: #fff
+            text-decoration: underline
+
+            &:hover
+                text-decoration: none
+
+    &__list
+        margin: 0
+        padding: 0
+        list-style: none
+
+    &__list-item
+        color: #7e818a
+        font-size: 16px
+        font-weight: 300
+
+        &:before
+            display: inline-block
+            content: '-'
+            padding-right: 5px

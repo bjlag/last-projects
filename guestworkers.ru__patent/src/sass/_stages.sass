@@ -1,0 +1,64 @@
+.stages
+    width: 85%
+
+    @media only screen and ( max-width: 991px )
+        width: 100%
+
+    &__list
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin: 0
+        padding: 0
+        background: url("../images/bg__dotted.png") repeat-x center
+        list-style: none
+
+    &__list-item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 60px
+        height: 60px
+        border: 2px solid #333333
+        background: #C6DEE3
+        border-radius: 50%
+        color: #333333
+        font-size: 30px
+        font-weight: 300
+        transition: color ease-out 0.15s, background-color ease-out 0.15s, border ease-out 0.15s
+        cursor: pointer
+
+        @media only sscreen and ( max-width: 567px )
+            width: 50px
+            height: 50px
+
+        &:hover,
+        &--active
+            border: 2px solid #f5a44c
+            background-color: #f5a44c
+            color: #fefefe
+
+        &:active
+            border: 2px solid darken( #f5a44c, 20% )
+            background-color: darken( #f5a44c, 20% )
+
+    &__content
+        margin-top: 60px
+
+    &__wrapper
+        display: none
+
+    &__title
+        margin-bottom: 25px
+        color: #333333
+        font-size: 30px
+        font-weight: 400
+        letter-spacing: 1.5px
+        line-height: 40px
+
+    &__text
+        color: #7e818a
+        font-size: 18px
+        font-weight: 300
+        line-height: 30px
+        letter-spacing: 0.9px

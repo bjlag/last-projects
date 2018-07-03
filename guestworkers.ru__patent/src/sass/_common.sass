@@ -1,0 +1,100 @@
+body
+    font-family: Roboto, sans-serif
+
+input:focus:required:invalid,
+textarea:focus:required:invalid
+    border: 1px solid #ff0000
+
+input:focus:required:valid,
+textarea:focus:required:valid
+    border: 1px solid green
+
+a
+    color: #ffb400
+
+    &:hover
+        color: #ffb400
+        text-decoration: underline
+
+    &:focus
+        color: #ffb400
+        outline: none
+        text-decoration: none
+
+.list
+    margin: 0 0 0 50px
+    padding: 0
+    list-style: none
+
+    li
+        position: relative
+        margin-bottom: 60px
+        color: #333333
+        font-size: 24px
+        font-weight: 400
+        letter-spacing: 1.2px
+        line-height: 30px
+
+        &:last-child
+            margin-bottom: 0
+
+        &:before
+            position: absolute
+            left: -50px
+            top: 8px
+            content: ''
+            display: block
+            width: 17px
+            height: 17px
+            border-radius: 50%
+            background-color: #f5a44c
+
+    &--smaller
+        li
+            margin-bottom: 20px
+            font-size: 20px
+            font-weight: 400
+            line-height: 25px
+            letter-spacing: 1px
+
+.text-special
+    color: #f4ad08
+
+.text-note
+    color: #624ea2 !important
+
+.header-square
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-bottom: 67px
+    height: 100px
+    color: #ffffff
+    font-size: 24px
+    font-weight: 400
+    letter-spacing: 1.2px
+
+    &:before
+        position: absolute
+        left: -55px
+        z-index: 0
+        content: ''
+        width: 110px
+        height: 110px
+        border: 10px solid rgba(245, 164, 76, 0.4)
+
+    &__text
+        position: absolute
+        z-index: 1
+        line-height: 32px
+
+.message
+    padding: 20px 0
+    font-size: 16px
+    font-weight: 100
+    color: #fff
+    text-transform: uppercase
+
+    &--hidden
+        display: none
