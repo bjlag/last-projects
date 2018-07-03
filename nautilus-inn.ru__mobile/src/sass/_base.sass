@@ -1,0 +1,150 @@
+body
+    font-family: $base-fonts
+    font-size: $font-size
+    font-weight: 400
+    line-height: $line-height
+    color: $base-color
+    min-width: $site-min-width
+
+h1
+    margin: 0 0 20px
+    text-align: left
+    color: #284364
+    font-size: 2.2em
+    font-weight: 700
+    line-height: 1.3em
+    letter-spacing: 0.73px
+
+    //@media only screen and (max-width: 978px)
+    //    text-align: center
+
+h2
+    margin: 40px 0 15px
+    color: #284364
+    font-size: 2em
+    font-weight: 400
+    letter-spacing: 0.73px
+    line-height: 1.3em
+
+h3
+    margin: 15px 0 10px
+    color: #284364
+    font-size: 1.4em
+    font-weight: 400
+    line-height: 1.3em
+    letter-spacing: 0.73px
+
+p
+    margin: 0 0 15px
+    font-size: 1em
+    font-weight: 400
+    line-height: 1.8
+
+a
+    color: #1192be
+    font-weight: 400
+    text-decoration: underline
+
+    &:active
+        color: lighten( #1192be, 20% )
+
+    &:hover
+        text-decoration: none
+
+    &:focus
+        outline: none
+
+b
+    font-weight: 600
+
+ul
+    margin: 15px 0
+    padding: 0 0 0 50px
+    list-style: none
+
+    li
+        position: relative
+
+        &:before
+            position: absolute
+            left: -20px
+            top: 5px
+            content: '\f111'
+            font-family: FontAwesome
+            color: #1192be
+            font-size: 0.6em
+
+img
+    width: 100%
+    border-radius: 10px
+
+input[type='text'],
+input[type='email']
+    max-width: 400px
+    width: 100%
+    border: 2px solid #2fa5c8
+    padding: 15px 20px
+    border-radius: 10px
+    box-sizing: border-box
+
+    &:focus
+        outline: none
+        box-shadow: 0 0 10px rgba(47, 165, 200, 0.75)
+
+input[type='submit']
+    cursor: pointer
+
+textarea
+    max-width: 400px
+    width: 100%
+    border: 2px solid #2fa5c8
+    padding: 15px 20px
+    border-radius: 10px
+    box-sizing: border-box
+    resize: vertical
+
+    &:focus
+        outline: none
+        box-shadow: 0 0 10px rgba(47, 165, 200, 0.75)
+
+select
+    max-width: 400px
+    width: 100%
+    padding: 15px 20px
+    border-radius: 10px
+    border: 2px solid #2fa5c8
+    outline: none
+    -webkit-appearance: none
+    background-image: url('images/i_arrow_select.png')
+    background-position: 96% center
+    background-repeat: no-repeat
+    line-height: 1em
+    /* for FF */
+    -moz-appearance: none
+    text-indent: 0.01px
+    text-overflow: ''
+    /* for IE */
+    -ms-appearance: none
+    appearance: none!important
+
+    &::-ms-expand
+        display: none
+
+    &:focus
+        box-shadow: 0 0 10px rgba(47, 165, 200, 0.75)
+
+
+input:focus:required:invalid,
+textarea:focus:required:invalid
+    border: 1px solid $error-color
+
+input:focus:required:valid,
+textarea:focus:required:valid
+    border: 1px solid $success-color
+
+*::-webkit-input-placeholder,
+*:-moz-placeholder,
+*::-moz-placeholder,
+*:-ms-input-placeholder
+    color: lighten( $base-color, $change-color * 2 )
+    opacity: 1

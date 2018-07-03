@@ -1,0 +1,103 @@
+.block-list
+    margin: 0 -15px 30px
+
+    &__item
+        position: relative
+        padding: 20px 15px
+        margin-bottom: 80px
+        background-color: #ecf7f8
+
+        &:last-child
+            margin-bottom: 30px
+
+    &__title
+        margin: 0 0 15px
+        color: #284364
+        font-size: 1.8em
+        font-weight: 600
+        line-height: 1.4
+
+        > a
+            color: inherit
+            font-size: inherit
+            text-decoration: none
+
+            &:active
+                color: lighten( #284364, 20% )
+
+        @media only screen and (max-width: 567px)
+            text-align: center
+
+    &__left,
+    &__right
+        float: left
+        width: 50%
+
+    &__left
+        i
+            color: #1192be
+            
+        @media only screen and (max-width: 567px)
+            float: none
+            width: 100%
+            margin-bottom: 15px
+            text-align: center
+
+    &__right
+        text-align: right
+
+        @media only screen and (max-width: 567px)
+            float: none
+            width: 100%
+            text-align: center
+
+    &__wrapper-img
+        position: relative
+        line-height: 0
+        box-sizing: border-box
+        margin-bottom: 20px
+
+        @media only screen and (min-width: 979px)
+            float: left
+            width: 30%
+            margin-bottom: 0
+
+    &__wrapper-body
+        box-sizing: border-box
+
+        @media only screen and (min-width: 979px)
+            float: left
+            padding-left: 30px
+            //margin-left: 20%
+            width: 70%
+
+    &__wrapper-price
+        margin: 0 0 20px
+
+    &__add-info
+        margin-bottom: 10px
+        font-weight: 300
+
+        span
+            display: inline-block
+            margin-right: 30px
+
+        @media only screen and (max-width: 567px)
+            text-align: center
+
+    &__description
+        margin-bottom: 40px
+
+        @media only screen and (max-width: 567px)
+            text-align: center
+
+    &__button
+        position: absolute
+        bottom: -30px
+        left: 0
+        right: 0
+        margin: 0 15px
+        text-align: center
+
+        @media only screen and (min-width: 979px)
+            text-align: right

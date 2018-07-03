@@ -1,0 +1,89 @@
+.form-booking
+    border: 10px solid #284364
+    border-radius: 15px
+    padding: 20px
+
+    &__title
+        margin-bottom: 15px
+        color: #284364
+        font-size: 2em
+        font-weight: 400
+        letter-spacing: 0.73px
+        line-height: 1.2em
+
+        @media only screen and (max-width: 666px)
+            text-align: center
+
+    &__desc
+        margin-bottom: 20px
+
+        @media only screen and (max-width: 666px)
+            text-align: center
+
+    &__col-input
+        float: left
+        width: 25%
+
+        @media only screen and (max-width: 666px)
+            float: none
+            width: 100%
+            margin-top: 30px
+
+        @media only screen and (max-width: 766px)
+            width: 29%
+
+    &__col-btn
+        float: right
+        width: 50%
+        padding-top: 26px
+        text-align: right
+
+        @media only screen and (max-width: 666px)
+            float: none
+            width: 100%
+            text-align: center
+
+        @media only screen and (max-width: 766px)
+            width: 42%
+
+    &__label
+        display: block
+        margin-bottom: 10px
+        padding-left: 10px
+        font-weight: 500
+        line-height: 1
+        letter-spacing: 0.73px
+        color: #284364
+
+        @media only screen and (max-width: 666px)
+            padding-left: 0
+            text-align: center
+
+    &__input
+        box-sizing: border-box
+        padding: 19px 20px !important
+        width: 160px
+        //width: 55%
+
+        @media only screen and (max-width: 666px)
+            width: 100%
+
+    &__input-group
+        position: relative
+        display: inline-block
+
+        @media only screen and (max-width: 666px)
+            display: block
+
+        .calendar-icon
+            position: absolute
+            right: 15px
+            top: 50%
+            margin: -10px 0 0
+            border-radius: 0
+            outline: none
+
+        img.calendar-icon-hover
+            border: none
+            background: none
+            //margin-left: 0
