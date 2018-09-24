@@ -1,6 +1,6 @@
 # Посадочная страница по патентам на работу
 
-`2018` [http://patent.guestworkers.ru/](http://patent.guestworkers.ru/)
+[http://patent.guestworkers.ru/](http://patent.guestworkers.ru/)
 
 _Front-end, Back-end_
 

@@ -1,6 +1,6 @@
 # Мобильная версия сайта NAUTILUS-INN.RU
 
-`2018` [https://nautilus-inn.ru](https://nautilus-inn.ru)
+[https://nautilus-inn.ru](https://nautilus-inn.ru)
 
 _Проектирование, Front-end, Back-end_
 
